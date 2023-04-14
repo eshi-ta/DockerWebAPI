@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    background-color: #7de8c8;
+    height: 50px;
+    border: 1px solid rgb(93, 199, 93);
+    
+    
+}
+.content{
+    background-color: white;
+    min-height: 500px;
+    
+
+}
+.footer{
+    background-color: #7de8c8;
+    height: 30px;
+    border: 1px solid green;
+
+}
+.details-display{
+    /* background-color: #a6a430; */
+    /* background-color:  #66b3ff; */
+    min-height: 500px;
+    
+}
+.form-display{
+    /* background-color:#7de8c8; */
+    /* background-color: #ffb3ff; */
+    min-height: 500px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    
+
+}
+.vertical {
+    border-left: 3px solid #7de8c8;
+    margin-top: 20px;
+    height: 450px;
+    position:absolute;
+    left: 50%;
+}
+label{
+    display: inline-block;
+}
+tr{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+thead{
+    background-color:  #99cc00;
+}
+.center{
+    margin-left: auto;
+    margin-right:auto;
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #e6ffb3;
+  }
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
+  }
+
+.fade-in {
+    animation: fadeIn 2s ease;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
