@@ -1,0 +1,32 @@
+﻿@model List<Event>
+@{
+    var eventIds = new List<int>();
+    foreach (var obj in Model)
+    {
+        var l = obj.InviteByEmail.Split(",");
+        if (l.Contains(User.Identity.Name))
+        {
+            eventIds.Add(obj.Id);
+        }
+    }
+}
+
+<table class="table table-striped table-responsive">
+    <thead>
+        <tr>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            if (eventIds.Contains(obj.Id))
+            {
+                <tr>
+                    <td><a asp-controller="Event" asp-action="EventDetails" asp-route-id="@obj.Id">@obj.Title</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>

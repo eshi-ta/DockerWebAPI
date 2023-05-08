@@ -1,0 +1,66 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject Microsoft.AspNetCore.Identity.SignInManager<IdentityUser> _signInManager
+@if (_signInManager.IsSignedIn(User))
+{
+    if (User.IsInRole("Admin"))
+    {
+        <li class="nav-item ">
+            <a class="nav-link text-dark "><i>Hello , @User.Identity.Name</i></a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Event" asp-action="ListAllEvents">
+                <b class="bi bi-plus-circle">&nbsp; ListAllEvents</b>
+            </a>
+        </li>
+        <li class="nav-item text-end">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Logout">
+                <b class="bi bi-plus-circle"> Logout</b>
+            </a>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item ">
+            <a class="nav-link text-dark "><i>Hello , @User.Identity.Name</i></a>
+        </li>
+
+        <li class="nav-item ">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Event" asp-action="CreateEvent">
+                <b class="bi bi-plus-circle">&nbsp;Create Event</b>
+            </a>
+        </li>
+        <li class="nav-item text-end">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Event" asp-action="MyInvitations">
+                <b class="bi bi-plus-circle">&nbsp;My Invitations</b>
+            </a>
+        </li>
+        <li class="nav-item text-end">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Event" asp-action="MyEvents">
+                <b class="bi bi-plus-circle">&nbsp; My Events</b>
+            </a>
+        </li>
+        <li class="nav-item text-end">
+            <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Logout">
+                <b class="bi bi-plus-circle"> Logout</b>
+            </a>
+        </li>
+    }
+
+
+
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Register">Register</a>
+    </li>
+}
+
+
+
+
+
+

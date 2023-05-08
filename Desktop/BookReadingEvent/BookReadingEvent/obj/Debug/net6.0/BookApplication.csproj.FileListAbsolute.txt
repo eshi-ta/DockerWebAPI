@@ -1,0 +1,9 @@
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.csproj.AssemblyReference.cache
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.AssemblyInfoInputs.cache
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.AssemblyInfo.cs
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.csproj.CoreCompileInputs.cache
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.RazorAssemblyInfo.cache
+C:\Users\eshitasingh\Desktop\BookReadingEvent\BookReadingEvent\obj\Debug\net6.0\BookApplication.RazorAssemblyInfo.cs

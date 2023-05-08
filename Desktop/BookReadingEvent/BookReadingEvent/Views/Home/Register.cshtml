@@ -1,0 +1,21 @@
+﻿@model User
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FullName">Full Name </label>
+        <input asp-for="FullName" type="fullname" class="form-control" placeholder="Enter Full Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email address</label>
+        <input asp-for="Email" type="email" class="form-control" placeholder="Enter Your Email">
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" type="password" class="form-control" placeholder="Enter Your Password">
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input">
+        <label class="form-check-label">Remember Me</label>
+    </div>
+    <button asp-controller="Home" asp-action="Register" type="submit" class="btn btn-primary">Submit</button>
+</form>
